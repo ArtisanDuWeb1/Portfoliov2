@@ -100,7 +100,7 @@ export default {
         getFiles(){
             axios({
                 method: 'get',
-                url: 'https://api.github.com/repos/ArtisanDuWeb1/Portfolio/commits',       
+                url: 'https://api.github.com/repos/ArtisanDuWeb1/Portfoliov2/commits',       
             }).then(
                 response => (
                     this.lastCommit = new Date(response.data[0].commit.committer.date).toLocaleDateString("fr"),
